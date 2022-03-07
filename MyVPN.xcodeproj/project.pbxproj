@@ -9,24 +9,15 @@
 /* Begin PBXBuildFile section */
 		CA69157527D5F5FC004D3D5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA69157427D5F5FC004D3D5F /* AppDelegate.swift */; };
 		CA69157727D5F5FC004D3D5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA69157627D5F5FC004D3D5F /* SceneDelegate.swift */; };
-		CA69157927D5F5FC004D3D5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA69157827D5F5FC004D3D5F /* ViewController.swift */; };
+		CA69157927D5F5FC004D3D5F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA69157827D5F5FC004D3D5F /* MainViewController.swift */; };
 		CA69157C27D5F5FC004D3D5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA69157A27D5F5FC004D3D5F /* Main.storyboard */; };
 		CA69157E27D5F5FD004D3D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA69157D27D5F5FD004D3D5F /* Assets.xcassets */; };
 		CA69158127D5F5FD004D3D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA69157F27D5F5FD004D3D5F /* LaunchScreen.storyboard */; };
 		CA69158C27D5F5FD004D3D5F /* MyVPNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA69158B27D5F5FD004D3D5F /* MyVPNTests.swift */; };
-		CA69159627D5F5FD004D3D5F /* MyVPNUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA69159527D5F5FD004D3D5F /* MyVPNUITests.swift */; };
-		CA69159827D5F5FD004D3D5F /* MyVPNUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA69159727D5F5FD004D3D5F /* MyVPNUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		CA69158827D5F5FD004D3D5F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CA69156927D5F5FC004D3D5F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CA69157027D5F5FC004D3D5F;
-			remoteInfo = MyVPN;
-		};
-		CA69159227D5F5FD004D3D5F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CA69156927D5F5FC004D3D5F /* Project object */;
 			proxyType = 1;
@@ -39,16 +30,13 @@
 		CA69157127D5F5FC004D3D5F /* MyVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA69157427D5F5FC004D3D5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA69157627D5F5FC004D3D5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA69157827D5F5FC004D3D5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA69157827D5F5FC004D3D5F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CA69157B27D5F5FC004D3D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA69157D27D5F5FD004D3D5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA69158027D5F5FD004D3D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA69158227D5F5FD004D3D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA69158727D5F5FD004D3D5F /* MyVPNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyVPNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA69158B27D5F5FD004D3D5F /* MyVPNTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVPNTests.swift; sourceTree = "<group>"; };
-		CA69159127D5F5FD004D3D5F /* MyVPNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyVPNUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA69159527D5F5FD004D3D5F /* MyVPNUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVPNUITests.swift; sourceTree = "<group>"; };
-		CA69159727D5F5FD004D3D5F /* MyVPNUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVPNUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +54,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA69158E27D5F5FD004D3D5F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +62,6 @@
 			children = (
 				CA69157327D5F5FC004D3D5F /* MyVPN */,
 				CA69158A27D5F5FD004D3D5F /* MyVPNTests */,
-				CA69159427D5F5FD004D3D5F /* MyVPNUITests */,
 				CA69157227D5F5FC004D3D5F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +71,6 @@
 			children = (
 				CA69157127D5F5FC004D3D5F /* MyVPN.app */,
 				CA69158727D5F5FD004D3D5F /* MyVPNTests.xctest */,
-				CA69159127D5F5FD004D3D5F /* MyVPNUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,13 +78,9 @@
 		CA69157327D5F5FC004D3D5F /* MyVPN */ = {
 			isa = PBXGroup;
 			children = (
-				CA69157427D5F5FC004D3D5F /* AppDelegate.swift */,
-				CA69157627D5F5FC004D3D5F /* SceneDelegate.swift */,
-				CA69157827D5F5FC004D3D5F /* ViewController.swift */,
-				CA69157A27D5F5FC004D3D5F /* Main.storyboard */,
-				CA69157D27D5F5FD004D3D5F /* Assets.xcassets */,
-				CA69157F27D5F5FD004D3D5F /* LaunchScreen.storyboard */,
-				CA69158227D5F5FD004D3D5F /* Info.plist */,
+				CA6915A527D5F7B7004D3D5F /* Resources */,
+				CA6915A627D5F7FE004D3D5F /* Screens */,
+				CA6915A427D5F74F004D3D5F /* SupportFiles */,
 			);
 			path = MyVPN;
 			sourceTree = "<group>";
@@ -118,13 +93,40 @@
 			path = MyVPNTests;
 			sourceTree = "<group>";
 		};
-		CA69159427D5F5FD004D3D5F /* MyVPNUITests */ = {
+		CA6915A427D5F74F004D3D5F /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
-				CA69159527D5F5FD004D3D5F /* MyVPNUITests.swift */,
-				CA69159727D5F5FD004D3D5F /* MyVPNUITestsLaunchTests.swift */,
+				CA69157427D5F5FC004D3D5F /* AppDelegate.swift */,
+				CA69157F27D5F5FD004D3D5F /* LaunchScreen.storyboard */,
+				CA69157627D5F5FC004D3D5F /* SceneDelegate.swift */,
 			);
-			path = MyVPNUITests;
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		CA6915A527D5F7B7004D3D5F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA69157D27D5F5FD004D3D5F /* Assets.xcassets */,
+				CA69158227D5F5FD004D3D5F /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CA6915A627D5F7FE004D3D5F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CA6915A727D5F817004D3D5F /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CA6915A727D5F817004D3D5F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CA69157A27D5F5FC004D3D5F /* Main.storyboard */,
+				CA69157827D5F5FC004D3D5F /* MainViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +167,6 @@
 			productReference = CA69158727D5F5FD004D3D5F /* MyVPNTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CA69159027D5F5FD004D3D5F /* MyVPNUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CA6915A127D5F5FD004D3D5F /* Build configuration list for PBXNativeTarget "MyVPNUITests" */;
-			buildPhases = (
-				CA69158D27D5F5FD004D3D5F /* Sources */,
-				CA69158E27D5F5FD004D3D5F /* Frameworks */,
-				CA69158F27D5F5FD004D3D5F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CA69159327D5F5FD004D3D5F /* PBXTargetDependency */,
-			);
-			name = MyVPNUITests;
-			productName = MyVPNUITests;
-			productReference = CA69159127D5F5FD004D3D5F /* MyVPNUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +181,6 @@
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					CA69158627D5F5FD004D3D5F = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = CA69157027D5F5FC004D3D5F;
-					};
-					CA69159027D5F5FD004D3D5F = {
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = CA69157027D5F5FC004D3D5F;
 					};
@@ -221,7 +201,6 @@
 			targets = (
 				CA69157027D5F5FC004D3D5F /* MyVPN */,
 				CA69158627D5F5FD004D3D5F /* MyVPNTests */,
-				CA69159027D5F5FD004D3D5F /* MyVPNUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,13 +223,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA69158F27D5F5FD004D3D5F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,7 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA69157927D5F5FC004D3D5F /* ViewController.swift in Sources */,
+				CA69157927D5F5FC004D3D5F /* MainViewController.swift in Sources */,
 				CA69157527D5F5FC004D3D5F /* AppDelegate.swift in Sources */,
 				CA69157727D5F5FC004D3D5F /* SceneDelegate.swift in Sources */,
 			);
@@ -272,15 +244,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA69158D27D5F5FD004D3D5F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CA69159627D5F5FD004D3D5F /* MyVPNUITests.swift in Sources */,
-				CA69159827D5F5FD004D3D5F /* MyVPNUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +251,6 @@
 			isa = PBXTargetDependency;
 			target = CA69157027D5F5FC004D3D5F /* MyVPN */;
 			targetProxy = CA69158827D5F5FD004D3D5F /* PBXContainerItemProxy */;
-		};
-		CA69159327D5F5FD004D3D5F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CA69157027D5F5FC004D3D5F /* MyVPN */;
-			targetProxy = CA69159227D5F5FD004D3D5F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -441,12 +399,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N2RL696598;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyVPN/Info.plist;
+				INFOPLIST_FILE = MyVPN/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +413,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.myapp.MyVPN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -469,12 +429,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N2RL696598;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyVPN/Info.plist;
+				INFOPLIST_FILE = MyVPN/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -528,42 +489,6 @@
 			};
 			name = Release;
 		};
-		CA6915A227D5F5FD004D3D5F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N2RL696598;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.myapp.MyVPNUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MyVPN;
-			};
-			name = Debug;
-		};
-		CA6915A327D5F5FD004D3D5F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N2RL696598;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.myapp.MyVPNUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MyVPN;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -590,15 +515,6 @@
 			buildConfigurations = (
 				CA69159F27D5F5FD004D3D5F /* Debug */,
 				CA6915A027D5F5FD004D3D5F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CA6915A127D5F5FD004D3D5F /* Build configuration list for PBXNativeTarget "MyVPNUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CA6915A227D5F5FD004D3D5F /* Debug */,
-				CA6915A327D5F5FD004D3D5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
