@@ -7,11 +7,32 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+protocol MainDisplayProtocol: UIViewController {
+    
+}
 
+class MainViewController: UIViewController, MainDisplayProtocol {
+
+    // MARK: - Variables
+    
+    var presenter: MainPresenterProtocol?
+    
+    // MARK: - Outlets
+    
+    @IBOutlet weak private var selectCountryButton: UIBarButtonItem!
+    @IBOutlet weak private var countryLabel: UILabel!
+    @IBOutlet weak private var connectButton: UIButton!
+    
+    // MARK: - LifeCycle Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    // MARK: - Actions
+    
+    @IBAction func selectCountryTapped(_ sender: UIBarButtonItem) {
+        presenter?.presentSelectCountryScreen()
+    }
 }
