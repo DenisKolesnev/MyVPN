@@ -1,0 +1,36 @@
+disabled_rules:
+  - trailing_whitespace
+
+line_length: 150
+
+identifier_name:
+  min_length:
+    warning: 2
+  max_length:
+    warning: 40
+
+nesting:
+  type_level:
+    warning: 3
+    error: 6
+  statement_level:
+    warning: 5
+    error: 10
+
+function_parameter_count:
+  warning: 5
+  error: 10
+
+force_cast: warning
+force_try: warning
+
+file_length:
+  warning: 500
+  error: 1500
+
+type_body_length:
+  warning: 400
+  error: 450
+  
+  function_body_length:
+  warning: 70
