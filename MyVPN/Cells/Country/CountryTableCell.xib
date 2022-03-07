@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CountryCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="e0Y-do-peI" customClass="CountryTableCell" customModule="MyVPN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e0Y-do-peI" id="9Sx-tq-JDr">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇧🇾" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCZ-F6-RKG">
+                        <rect key="frame" x="20" y="2" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="F7T-qR-Iay"/>
+                            <constraint firstAttribute="height" constant="40" id="Gfb-l3-dBc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Belarus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7au-62-5Wf">
+                        <rect key="frame" x="68" y="7.5" width="78" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7au-62-5Wf" firstAttribute="centerY" secondItem="9Sx-tq-JDr" secondAttribute="centerY" id="B1G-pU-S2j"/>
+                    <constraint firstItem="NCZ-F6-RKG" firstAttribute="leading" secondItem="9Sx-tq-JDr" secondAttribute="leading" constant="20" symbolic="YES" id="Jpa-FW-O9W"/>
+                    <constraint firstItem="7au-62-5Wf" firstAttribute="leading" secondItem="NCZ-F6-RKG" secondAttribute="trailing" constant="8" symbolic="YES" id="N62-Zl-nBt"/>
+                    <constraint firstItem="NCZ-F6-RKG" firstAttribute="centerY" secondItem="9Sx-tq-JDr" secondAttribute="centerY" id="wsm-KY-UeT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="flagLabel" destination="NCZ-F6-RKG" id="GKM-8R-BG7"/>
+                <outlet property="nameLabel" destination="7au-62-5Wf" id="3h1-f3-IDE"/>
+            </connections>
+            <point key="canvasLocation" x="-2904.347826086957" y="-160.04464285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

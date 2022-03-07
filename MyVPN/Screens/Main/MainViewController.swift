@@ -8,18 +8,18 @@
 import UIKit
 
 protocol MainDisplayProtocol: UIViewController {
-    
+    func displayCountry(_ country: Country)
 }
 
-class MainViewController: UIViewController, MainDisplayProtocol {
+final class MainViewController: UIViewController {
 
     // MARK: - Variables
     
     var presenter: MainPresenterProtocol?
+    private var selectedCountry: Country!
     
     // MARK: - Outlets
     
-    @IBOutlet weak private var selectCountryButton: UIBarButtonItem!
     @IBOutlet weak private var countryLabel: UILabel!
     @IBOutlet weak private var connectButton: UIButton!
     
@@ -27,12 +27,32 @@ class MainViewController: UIViewController, MainDisplayProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        loadSelectedCountry()
+    }
+    
+    // MARK: - Private Methods
+    
+    private func loadSelectedCountry() {
+        if let selectedCountry = UserDefaultService.shared.selectedCountry {
+            self.selectedCountry = selectedCountry
+        } else {
+            self.selectedCountry = Country(flag: "🇧🇾", name: "Belarus")
+        }
+        
+        displayCountry(selectedCountry)
     }
 
     // MARK: - Actions
     
     @IBAction func selectCountryTapped(_ sender: UIBarButtonItem) {
-        presenter?.presentSelectCountryScreen()
+        presenter?.presentSelectCountryScreen(selectedCountry)
+    }
+}
+
+extension MainViewController: MainDisplayProtocol {
+    
+    func displayCountry(_ country: Country) {
+        countryLabel.text = "\(country.flag) \(country.name)"
+        selectedCountry = country
     }
 }

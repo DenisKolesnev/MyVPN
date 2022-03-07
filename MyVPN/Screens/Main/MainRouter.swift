@@ -8,16 +8,20 @@
 import UIKit
 
 protocol MainRouterProtocol {
-    func pushSelectCountryScreen()
+    func pushSelectCountryScreen(selected country: Country)
 }
 
 final class MainRouter: MainRouterProtocol {
     
     weak var presenter: MainPresenterProtocol?
         
-    func pushSelectCountryScreen() {
+    func pushSelectCountryScreen(selected country: Country) {
         let navigationController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController
-        let selectCountryViewController = SelectCountryAssembly.build()
+        let dataModel = SelectCountryDataModel(selectedCountry: country) { [weak self] selectedCountry in
+            self?.presenter?.presentCountry(selectedCountry)
+        }
+        
+        let selectCountryViewController = SelectCountryAssembly.build(model: dataModel)
         navigationController?.pushViewController(selectCountryViewController, animated: true)
     }
 }

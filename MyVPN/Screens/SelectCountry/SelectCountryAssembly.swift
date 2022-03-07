@@ -10,7 +10,7 @@ import UIKit
 
 final class SelectCountryAssembly {
 
-    static func build() -> UIViewController {
+    static func build(model: SelectCountryDataModel) -> UIViewController {
         
         let viewController = SelectCountryViewController()
         let interactor = SelectCountryInteractor()
@@ -22,6 +22,7 @@ final class SelectCountryAssembly {
         presenter.router = router
         
         viewController.presenter = presenter
+        viewController.dataModel = model
         router.presenter = presenter
         
         return viewController

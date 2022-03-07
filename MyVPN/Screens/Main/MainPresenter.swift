@@ -6,11 +6,11 @@
 //
 
 protocol MainPresenterProtocol: AnyObject {
-    func presentSelectCountryScreen()
+    func presentSelectCountryScreen(_ country: Country)
+    func presentCountry(_ country: Country)
 }
 
 final class MainPresenter {
-    
     weak var viewController: MainDisplayProtocol?
     var interactor: MainInteractorProtocol?
     var router: MainRouterProtocol?
@@ -18,7 +18,11 @@ final class MainPresenter {
 
 extension MainPresenter: MainPresenterProtocol {
     
-    func presentSelectCountryScreen() {
-        router?.pushSelectCountryScreen()
+    func presentSelectCountryScreen(_ country: Country) {
+        router?.pushSelectCountryScreen(selected: country)
+    }
+    
+    func presentCountry(_ country: Country) {
+        viewController?.displayCountry(country)
     }
 }

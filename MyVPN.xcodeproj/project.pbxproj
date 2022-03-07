@@ -24,6 +24,12 @@
 		CA6915BA27D686D1004D3D5F /* SelectCountryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915B527D686D1004D3D5F /* SelectCountryAssembly.swift */; };
 		CA6915BB27D686D1004D3D5F /* SelectCountryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915B627D686D1004D3D5F /* SelectCountryInteractor.swift */; };
 		CA6915BE27D68ED2004D3D5F /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915BD27D68ED2004D3D5F /* UIApplication.swift */; };
+		CA6915C027D69799004D3D5F /* SelectCountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915BF27D69799004D3D5F /* SelectCountryView.swift */; };
+		CA6915C227D6A015004D3D5F /* CountryTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915C127D6A015004D3D5F /* CountryTableViewDataSource.swift */; };
+		CA6915C427D6A289004D3D5F /* SelectCountryDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915C327D6A289004D3D5F /* SelectCountryDataModels.swift */; };
+		CA6915C627D6AA07004D3D5F /* CountryTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA6915C527D6AA07004D3D5F /* CountryTableCell.xib */; };
+		CA6915C827D6ABDC004D3D5F /* CountryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915C727D6ABDC004D3D5F /* CountryTableCell.swift */; };
+		CA6915CF27D6C476004D3D5F /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915CE27D6C476004D3D5F /* UserDefaultsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,12 @@
 		CA6915B527D686D1004D3D5F /* SelectCountryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryAssembly.swift; sourceTree = "<group>"; };
 		CA6915B627D686D1004D3D5F /* SelectCountryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryInteractor.swift; sourceTree = "<group>"; };
 		CA6915BD27D68ED2004D3D5F /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		CA6915BF27D69799004D3D5F /* SelectCountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryView.swift; sourceTree = "<group>"; };
+		CA6915C127D6A015004D3D5F /* CountryTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewDataSource.swift; sourceTree = "<group>"; };
+		CA6915C327D6A289004D3D5F /* SelectCountryDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryDataModels.swift; sourceTree = "<group>"; };
+		CA6915C527D6AA07004D3D5F /* CountryTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableCell.xib; sourceTree = "<group>"; };
+		CA6915C727D6ABDC004D3D5F /* CountryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableCell.swift; sourceTree = "<group>"; };
+		CA6915CE27D6C476004D3D5F /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +110,8 @@
 		CA69157327D5F5FC004D3D5F /* MyVPN */ = {
 			isa = PBXGroup;
 			children = (
+				CA6915CD27D6C462004D3D5F /* Services */,
+				CA6915C927D6AD21004D3D5F /* Cells */,
 				CA6915BC27D68EC0004D3D5F /* Extensions */,
 				CA6915A527D5F7B7004D3D5F /* Resources */,
 				CA6915A627D5F7FE004D3D5F /* Screens */,
@@ -118,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				CA69157427D5F5FC004D3D5F /* AppDelegate.swift */,
+				CA69158227D5F5FD004D3D5F /* Info.plist */,
 				CA69157F27D5F5FD004D3D5F /* LaunchScreen.storyboard */,
 				CA69157627D5F5FC004D3D5F /* SceneDelegate.swift */,
 			);
@@ -128,7 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				CA69157D27D5F5FD004D3D5F /* Assets.xcassets */,
-				CA69158227D5F5FD004D3D5F /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -159,10 +173,13 @@
 			isa = PBXGroup;
 			children = (
 				CA6915B427D686D1004D3D5F /* SelectCountryViewController.swift */,
+				CA6915BF27D69799004D3D5F /* SelectCountryView.swift */,
 				CA6915B227D686D1004D3D5F /* SelectCountryPresenter.swift */,
 				CA6915B627D686D1004D3D5F /* SelectCountryInteractor.swift */,
 				CA6915B327D686D1004D3D5F /* SelectCountryRouter.swift */,
 				CA6915B527D686D1004D3D5F /* SelectCountryAssembly.swift */,
+				CA6915C127D6A015004D3D5F /* CountryTableViewDataSource.swift */,
+				CA6915C327D6A289004D3D5F /* SelectCountryDataModels.swift */,
 			);
 			path = SelectCountry;
 			sourceTree = "<group>";
@@ -173,6 +190,31 @@
 				CA6915BD27D68ED2004D3D5F /* UIApplication.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CA6915C927D6AD21004D3D5F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CA6915CA27D6AD3D004D3D5F /* Country */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CA6915CA27D6AD3D004D3D5F /* Country */ = {
+			isa = PBXGroup;
+			children = (
+				CA6915C527D6AA07004D3D5F /* CountryTableCell.xib */,
+				CA6915C727D6ABDC004D3D5F /* CountryTableCell.swift */,
+			);
+			path = Country;
+			sourceTree = "<group>";
+		};
+		CA6915CD27D6C462004D3D5F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CA6915CE27D6C476004D3D5F /* UserDefaultsService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA69158127D5F5FD004D3D5F /* LaunchScreen.storyboard in Resources */,
+				CA6915C627D6AA07004D3D5F /* CountryTableCell.xib in Resources */,
 				CA69157E27D5F5FD004D3D5F /* Assets.xcassets in Resources */,
 				CA69157C27D5F5FC004D3D5F /* Main.storyboard in Resources */,
 			);
@@ -298,17 +341,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA6915C827D6ABDC004D3D5F /* CountryTableCell.swift in Sources */,
 				CA6915BE27D68ED2004D3D5F /* UIApplication.swift in Sources */,
 				CA6915BA27D686D1004D3D5F /* SelectCountryAssembly.swift in Sources */,
 				CA6915B827D686D1004D3D5F /* SelectCountryRouter.swift in Sources */,
+				CA6915C027D69799004D3D5F /* SelectCountryView.swift in Sources */,
 				CA69157927D5F5FC004D3D5F /* MainViewController.swift in Sources */,
+				CA6915CF27D6C476004D3D5F /* UserDefaultsService.swift in Sources */,
 				CA6915B027D67B75004D3D5F /* MainRouter.swift in Sources */,
 				CA6915AE27D6796E004D3D5F /* MainPresenter.swift in Sources */,
 				CA6915B727D686D1004D3D5F /* SelectCountryPresenter.swift in Sources */,
 				CA69157527D5F5FC004D3D5F /* AppDelegate.swift in Sources */,
 				CA6915AA27D67950004D3D5F /* MainAssembly.swift in Sources */,
+				CA6915C427D6A289004D3D5F /* SelectCountryDataModels.swift in Sources */,
 				CA6915AC27D6795F004D3D5F /* MainInteractor.swift in Sources */,
 				CA69157727D5F5FC004D3D5F /* SceneDelegate.swift in Sources */,
+				CA6915C227D6A015004D3D5F /* CountryTableViewDataSource.swift in Sources */,
 				CA6915B927D686D1004D3D5F /* SelectCountryViewController.swift in Sources */,
 				CA6915BB27D686D1004D3D5F /* SelectCountryInteractor.swift in Sources */,
 			);
@@ -477,7 +525,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N2RL696598;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyVPN/Resources/Info.plist;
+				INFOPLIST_FILE = MyVPN/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -506,7 +554,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N2RL696598;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyVPN/Resources/Info.plist;
+				INFOPLIST_FILE = MyVPN/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
