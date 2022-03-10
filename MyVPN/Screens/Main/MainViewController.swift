@@ -9,6 +9,8 @@ import UIKit
 
 protocol MainDisplayProtocol: UIViewController {
     func displayCountry(_ country: Country)
+    func displayConnect()
+    func displayDisconnect()
 }
 
 final class MainViewController: UIViewController {
@@ -35,6 +37,10 @@ final class MainViewController: UIViewController {
     @IBAction func selectCountryTapped(_ sender: UIBarButtonItem) {
         presenter?.presentSelectCountryScreen(selectedCountry)
     }
+    
+    @IBAction func connectButtonTapped(_ sender: UIButton) {
+        presenter?.presentConnect()
+    }
 }
 
 // MARK: - MainDisplayProtocol confirm Methods
@@ -45,13 +51,26 @@ extension MainViewController: MainDisplayProtocol {
         countryLabel.text = "\(country.flag) \(country.name)"
         selectedCountry = country
     }
+    
+    func displayConnect() {
+        // Тут мог бы быть вызов методов, которые еще как-нибудь меняли бы интерфейс при начале соединения
+        connectButton.isEnabled = false
+        startConnectAnimation()
+    }
+    
+    func displayDisconnect() {
+        // Тут мог бы быть вызов методов, которые еще как-нибудь меняли бы интерфейс при окончании соединения
+        // Допустим, вызов алерта "Соединение разорвано"
+        connectButton.isEnabled = true
+        stopConnectAnimation()
+    }
 }
 
 // MARK: - Private Methods
 
 private extension MainViewController {
     
-    private func loadSelectedCountry() {
+     func loadSelectedCountry() {
         if let selectedCountry = UserDefaultService.shared.selectedCountry {
             self.selectedCountry = selectedCountry
         } else {
@@ -59,5 +78,20 @@ private extension MainViewController {
         }
         
         displayCountry(selectedCountry)
+    }
+    
+    func startConnectAnimation() {
+        let animation = CABasicAnimation(keyPath: "backgroundColor")
+        animation.duration = 1
+        animation.fromValue = UIColor.secondarySystemFill.cgColor
+        animation.toValue = UIColor.systemGreen.cgColor
+        animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+        animation.autoreverses = true
+        animation.repeatCount = .greatestFiniteMagnitude
+        connectButton.layer.add(animation, forKey: nil)
+    }
+    
+    func stopConnectAnimation() {
+        connectButton.layer.removeAllAnimations()
     }
 }
