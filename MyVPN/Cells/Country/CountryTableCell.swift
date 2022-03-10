@@ -21,10 +21,10 @@ class CountryTableCell: UITableViewCell {
         
     override func awakeFromNib() {
         super.awakeFromNib()
-        configureFlagLabel()
+        configureFlag()
     }
 
-    private func configureFlagLabel() {
+    private func configureFlag() {
         flagLabel.layer.borderWidth = 1
         flagLabel.layer.borderColor = UIColor.systemGray2.cgColor
         flagLabel.layer.cornerRadius = flagLabel.frame.height / 2

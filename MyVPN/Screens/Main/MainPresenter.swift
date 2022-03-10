@@ -12,9 +12,10 @@ protocol MainPresenterProtocol: AnyObject {
 
 final class MainPresenter {
     weak var viewController: MainDisplayProtocol?
-    var interactor: MainInteractorProtocol?
     var router: MainRouterProtocol?
 }
+
+// MARK: - MainPresenterProtocol confirm Methods
 
 extension MainPresenter: MainPresenterProtocol {
     

@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol SelectCountryInteractorProtocol: AnyObject {
+protocol SelectCountryInteractorProtocol {
     func getCountries() -> [Country]
     func setSelectedCountry(_ country: Country)
 }

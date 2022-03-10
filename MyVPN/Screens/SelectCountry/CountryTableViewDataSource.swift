@@ -9,6 +9,8 @@ import UIKit
 
 final class CountryTableViewDataSource: NSObject {
     
+    // MARK: - Constants
+    
     private enum Constants {
         static let cellHeight: CGFloat = 50
     }
@@ -17,21 +19,21 @@ final class CountryTableViewDataSource: NSObject {
     
     var presenter: SelectCountryPresenterProtocol?
     private var dataModel: SelectCountryDataModel?
-    
     private var countries = [Country]()
     
     init(with dataModel: SelectCountryDataModel?) {
-        super.init()
         self.dataModel = dataModel
     }
     
     // MARK: - Public Methods
     
-    func updateTableView(with data: Countries, tableView: UITableView) {
+    func updateTableView(with data: Countries, for tableView: UITableView) {
         countries = data
         tableView.reloadData()
     }
 }
+
+// MARK: - TableView Delegates
 
 extension CountryTableViewDataSource: UITableViewDelegate, UITableViewDataSource {
             
@@ -43,11 +45,9 @@ extension CountryTableViewDataSource: UITableViewDelegate, UITableViewDataSource
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CountryCell", for: indexPath) as? CountryTableCell else {
             return UITableViewCell()
         }
-        
         let country = countries[indexPath.row]
         cell.country = country
         cell.accessoryType = (country.name == dataModel?.selectedCountry.name ? .checkmark : .none)
-        
         return cell
     }
     

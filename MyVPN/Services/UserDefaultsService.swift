@@ -7,6 +7,10 @@
 
 import Foundation
 
+protocol UserDefaultServiceProtocol {
+    var selectedCountry: Country? { get set }
+}
+
 final class UserDefaultService {
     
     // MARK: - Keys
@@ -23,8 +27,11 @@ final class UserDefaultService {
 
     static let shared = UserDefaultService()
     private init() { }
+}
 
-    // MARK: - Public Variables
+// MARK: - UserDefaultServiceProtocol confirm Methods
+
+extension UserDefaultService: UserDefaultServiceProtocol {
     
     var selectedCountry: Country? {
         get {

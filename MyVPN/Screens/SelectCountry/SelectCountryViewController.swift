@@ -18,29 +18,58 @@ final class SelectCountryViewController: UIViewController {
     
     var presenter: SelectCountryPresenterProtocol?
     var dataModel: SelectCountryDataModel?
-    
-    private let contentView = SelectCountryView()
-    private var tableViewDataSource: CountryTableViewDataSource!
+    private var tableView: UITableView!
+    private var dataSource: CountryTableViewDataSource!
     
     // MARK: - Lifecycle Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        contentView.presenter = presenter
-        tableViewDataSource = CountryTableViewDataSource(with: dataModel)
-        tableViewDataSource.presenter = presenter
-        contentView.setupView(dataSource: tableViewDataSource)
+        dataSource = CountryTableViewDataSource(with: dataModel)
+        dataSource.presenter = presenter
         navigationItem.title = "Select Country"
-    }
-    
-    override func loadView() {
-        view = contentView
+        setupView()
     }
 }
+
+// MARK: - SelectCountryDisplayProtocol confirm Methods
 
 extension SelectCountryViewController: SelectCountryDisplayProtocol {
     
     func displayCountries(data: Countries) {
-        tableViewDataSource?.updateTableView(with: data, tableView: contentView.tableView)
+        dataSource?.updateTableView(with: data, for: tableView)
+    }
+}
+
+// MARK: - Private Methods
+
+private extension SelectCountryViewController {
+
+    func setupView() {
+        view.backgroundColor = .systemBackground
+        configureTableView()
+        registerCell()
+        setConstraints()
+    }
+
+    func configureTableView() {
+        tableView = UITableView()
+        tableView.dataSource = dataSource
+        tableView.delegate = dataSource
+        view.addSubview(tableView)
+        presenter?.presentCountries()
+    }
+    
+    func registerCell() {
+        let nib = UINib(nibName: "CountryTableCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "CountryCell")
+    }
+    
+    func setConstraints() {
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
     }
 }

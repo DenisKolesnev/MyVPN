@@ -29,8 +29,27 @@ final class MainViewController: UIViewController {
         super.viewDidLoad()
         loadSelectedCountry()
     }
+
+    // MARK: - Actions
     
-    // MARK: - Private Methods
+    @IBAction func selectCountryTapped(_ sender: UIBarButtonItem) {
+        presenter?.presentSelectCountryScreen(selectedCountry)
+    }
+}
+
+// MARK: - MainDisplayProtocol confirm Methods
+
+extension MainViewController: MainDisplayProtocol {
+    
+    func displayCountry(_ country: Country) {
+        countryLabel.text = "\(country.flag) \(country.name)"
+        selectedCountry = country
+    }
+}
+
+// MARK: - Private Methods
+
+private extension MainViewController {
     
     private func loadSelectedCountry() {
         if let selectedCountry = UserDefaultService.shared.selectedCountry {
@@ -40,19 +59,5 @@ final class MainViewController: UIViewController {
         }
         
         displayCountry(selectedCountry)
-    }
-
-    // MARK: - Actions
-    
-    @IBAction func selectCountryTapped(_ sender: UIBarButtonItem) {
-        presenter?.presentSelectCountryScreen(selectedCountry)
-    }
-}
-
-extension MainViewController: MainDisplayProtocol {
-    
-    func displayCountry(_ country: Country) {
-        countryLabel.text = "\(country.flag) \(country.name)"
-        selectedCountry = country
     }
 }

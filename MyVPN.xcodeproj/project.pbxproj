@@ -15,7 +15,6 @@
 		CA69158127D5F5FD004D3D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA69157F27D5F5FD004D3D5F /* LaunchScreen.storyboard */; };
 		CA69158C27D5F5FD004D3D5F /* MyVPNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA69158B27D5F5FD004D3D5F /* MyVPNTests.swift */; };
 		CA6915AA27D67950004D3D5F /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915A927D67950004D3D5F /* MainAssembly.swift */; };
-		CA6915AC27D6795F004D3D5F /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915AB27D6795F004D3D5F /* MainInteractor.swift */; };
 		CA6915AE27D6796E004D3D5F /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915AD27D6796E004D3D5F /* MainPresenter.swift */; };
 		CA6915B027D67B75004D3D5F /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915AF27D67B75004D3D5F /* MainRouter.swift */; };
 		CA6915B727D686D1004D3D5F /* SelectCountryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915B227D686D1004D3D5F /* SelectCountryPresenter.swift */; };
@@ -24,7 +23,6 @@
 		CA6915BA27D686D1004D3D5F /* SelectCountryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915B527D686D1004D3D5F /* SelectCountryAssembly.swift */; };
 		CA6915BB27D686D1004D3D5F /* SelectCountryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915B627D686D1004D3D5F /* SelectCountryInteractor.swift */; };
 		CA6915BE27D68ED2004D3D5F /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915BD27D68ED2004D3D5F /* UIApplication.swift */; };
-		CA6915C027D69799004D3D5F /* SelectCountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915BF27D69799004D3D5F /* SelectCountryView.swift */; };
 		CA6915C227D6A015004D3D5F /* CountryTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915C127D6A015004D3D5F /* CountryTableViewDataSource.swift */; };
 		CA6915C427D6A289004D3D5F /* SelectCountryDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915C327D6A289004D3D5F /* SelectCountryDataModels.swift */; };
 		CA6915C627D6AA07004D3D5F /* CountryTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA6915C527D6AA07004D3D5F /* CountryTableCell.xib */; };
@@ -54,7 +52,6 @@
 		CA69158727D5F5FD004D3D5F /* MyVPNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyVPNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA69158B27D5F5FD004D3D5F /* MyVPNTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVPNTests.swift; sourceTree = "<group>"; };
 		CA6915A927D67950004D3D5F /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
-		CA6915AB27D6795F004D3D5F /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		CA6915AD27D6796E004D3D5F /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		CA6915AF27D67B75004D3D5F /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		CA6915B227D686D1004D3D5F /* SelectCountryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryPresenter.swift; sourceTree = "<group>"; };
@@ -63,7 +60,6 @@
 		CA6915B527D686D1004D3D5F /* SelectCountryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryAssembly.swift; sourceTree = "<group>"; };
 		CA6915B627D686D1004D3D5F /* SelectCountryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryInteractor.swift; sourceTree = "<group>"; };
 		CA6915BD27D68ED2004D3D5F /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
-		CA6915BF27D69799004D3D5F /* SelectCountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryView.swift; sourceTree = "<group>"; };
 		CA6915C127D6A015004D3D5F /* CountryTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewDataSource.swift; sourceTree = "<group>"; };
 		CA6915C327D6A289004D3D5F /* SelectCountryDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryDataModels.swift; sourceTree = "<group>"; };
 		CA6915C527D6AA07004D3D5F /* CountryTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableCell.xib; sourceTree = "<group>"; };
@@ -162,7 +158,6 @@
 				CA69157A27D5F5FC004D3D5F /* Main.storyboard */,
 				CA69157827D5F5FC004D3D5F /* MainViewController.swift */,
 				CA6915AD27D6796E004D3D5F /* MainPresenter.swift */,
-				CA6915AB27D6795F004D3D5F /* MainInteractor.swift */,
 				CA6915AF27D67B75004D3D5F /* MainRouter.swift */,
 				CA6915A927D67950004D3D5F /* MainAssembly.swift */,
 			);
@@ -173,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				CA6915B427D686D1004D3D5F /* SelectCountryViewController.swift */,
-				CA6915BF27D69799004D3D5F /* SelectCountryView.swift */,
 				CA6915B227D686D1004D3D5F /* SelectCountryPresenter.swift */,
 				CA6915B627D686D1004D3D5F /* SelectCountryInteractor.swift */,
 				CA6915B327D686D1004D3D5F /* SelectCountryRouter.swift */,
@@ -345,7 +339,6 @@
 				CA6915BE27D68ED2004D3D5F /* UIApplication.swift in Sources */,
 				CA6915BA27D686D1004D3D5F /* SelectCountryAssembly.swift in Sources */,
 				CA6915B827D686D1004D3D5F /* SelectCountryRouter.swift in Sources */,
-				CA6915C027D69799004D3D5F /* SelectCountryView.swift in Sources */,
 				CA69157927D5F5FC004D3D5F /* MainViewController.swift in Sources */,
 				CA6915CF27D6C476004D3D5F /* UserDefaultsService.swift in Sources */,
 				CA6915B027D67B75004D3D5F /* MainRouter.swift in Sources */,
@@ -354,7 +347,6 @@
 				CA69157527D5F5FC004D3D5F /* AppDelegate.swift in Sources */,
 				CA6915AA27D67950004D3D5F /* MainAssembly.swift in Sources */,
 				CA6915C427D6A289004D3D5F /* SelectCountryDataModels.swift in Sources */,
-				CA6915AC27D6795F004D3D5F /* MainInteractor.swift in Sources */,
 				CA69157727D5F5FC004D3D5F /* SceneDelegate.swift in Sources */,
 				CA6915C227D6A015004D3D5F /* CountryTableViewDataSource.swift in Sources */,
 				CA6915B927D686D1004D3D5F /* SelectCountryViewController.swift in Sources */,

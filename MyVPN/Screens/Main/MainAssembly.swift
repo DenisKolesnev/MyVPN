@@ -19,12 +19,10 @@ final class MainAssembly {
             return UIViewController()
         }
 
-        let interactor = MainInteractor()
         let router = MainRouter()
         let presenter = MainPresenter()
         
         presenter.viewController = viewController
-        presenter.interactor = interactor
         presenter.router = router
         
         viewController.presenter = presenter
