@@ -13,7 +13,6 @@
 		CA69157C27D5F5FC004D3D5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA69157A27D5F5FC004D3D5F /* Main.storyboard */; };
 		CA69157E27D5F5FD004D3D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA69157D27D5F5FD004D3D5F /* Assets.xcassets */; };
 		CA69158127D5F5FD004D3D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA69157F27D5F5FD004D3D5F /* LaunchScreen.storyboard */; };
-		CA69158C27D5F5FD004D3D5F /* MyVPNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA69158B27D5F5FD004D3D5F /* MyVPNTests.swift */; };
 		CA6915AA27D67950004D3D5F /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915A927D67950004D3D5F /* MainAssembly.swift */; };
 		CA6915AE27D6796E004D3D5F /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915AD27D6796E004D3D5F /* MainPresenter.swift */; };
 		CA6915B027D67B75004D3D5F /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915AF27D67B75004D3D5F /* MainRouter.swift */; };
@@ -28,6 +27,9 @@
 		CA6915C627D6AA07004D3D5F /* CountryTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA6915C527D6AA07004D3D5F /* CountryTableCell.xib */; };
 		CA6915C827D6ABDC004D3D5F /* CountryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915C727D6ABDC004D3D5F /* CountryTableCell.swift */; };
 		CA6915CF27D6C476004D3D5F /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915CE27D6C476004D3D5F /* UserDefaultsService.swift */; };
+		CA69160027DA5EA4004D3D5F /* SelectCountryPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6915FF27DA5EA4004D3D5F /* SelectCountryPresenterTests.swift */; };
+		CA69160227DA5F46004D3D5F /* SelectCountryInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA69160127DA5F46004D3D5F /* SelectCountryInteractorMock.swift */; };
+		CA69160427DA6032004D3D5F /* SelectCountryViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA69160327DA6032004D3D5F /* SelectCountryViewControllerMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +52,6 @@
 		CA69158027D5F5FD004D3D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA69158227D5F5FD004D3D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA69158727D5F5FD004D3D5F /* MyVPNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyVPNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA69158B27D5F5FD004D3D5F /* MyVPNTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVPNTests.swift; sourceTree = "<group>"; };
 		CA6915A927D67950004D3D5F /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
 		CA6915AD27D6796E004D3D5F /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		CA6915AF27D67B75004D3D5F /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
@@ -65,6 +66,9 @@
 		CA6915C527D6AA07004D3D5F /* CountryTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableCell.xib; sourceTree = "<group>"; };
 		CA6915C727D6ABDC004D3D5F /* CountryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableCell.swift; sourceTree = "<group>"; };
 		CA6915CE27D6C476004D3D5F /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		CA6915FF27DA5EA4004D3D5F /* SelectCountryPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryPresenterTests.swift; sourceTree = "<group>"; };
+		CA69160127DA5F46004D3D5F /* SelectCountryInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryInteractorMock.swift; sourceTree = "<group>"; };
+		CA69160327DA6032004D3D5F /* SelectCountryViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryViewControllerMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +123,7 @@
 		CA69158A27D5F5FD004D3D5F /* MyVPNTests */ = {
 			isa = PBXGroup;
 			children = (
-				CA69158B27D5F5FD004D3D5F /* MyVPNTests.swift */,
+				CA6915FE27DA5E6F004D3D5F /* SelectCountryTests */,
 			);
 			path = MyVPNTests;
 			sourceTree = "<group>";
@@ -209,6 +213,24 @@
 				CA6915CE27D6C476004D3D5F /* UserDefaultsService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		CA6915FE27DA5E6F004D3D5F /* SelectCountryTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA69160527DA603A004D3D5F /* SelectContryMocks */,
+				CA6915FF27DA5EA4004D3D5F /* SelectCountryPresenterTests.swift */,
+			);
+			path = SelectCountryTests;
+			sourceTree = "<group>";
+		};
+		CA69160527DA603A004D3D5F /* SelectContryMocks */ = {
+			isa = PBXGroup;
+			children = (
+				CA69160327DA6032004D3D5F /* SelectCountryViewControllerMock.swift */,
+				CA69160127DA5F46004D3D5F /* SelectCountryInteractorMock.swift */,
+			);
+			path = SelectContryMocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,7 +380,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA69158C27D5F5FD004D3D5F /* MyVPNTests.swift in Sources */,
+				CA69160027DA5EA4004D3D5F /* SelectCountryPresenterTests.swift in Sources */,
+				CA69160227DA5F46004D3D5F /* SelectCountryInteractorMock.swift in Sources */,
+				CA69160427DA6032004D3D5F /* SelectCountryViewControllerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
