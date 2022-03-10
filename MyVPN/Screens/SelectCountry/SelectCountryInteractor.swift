@@ -6,15 +6,28 @@
 //  
 //
 
-import Foundation
-
 protocol SelectCountryInteractorProtocol {
     func getCountries() -> [Country]
     func setSelectedCountry(_ country: Country)
 }
 
-final class SelectCountryInteractor: SelectCountryInteractorProtocol {
+final class SelectCountryInteractor {
+    
+    // MARK: - Variables
+    
+    private var userDefaults: UserDefaultsServiceProtocol
+    
+    // MARK: - Lifecycle Methods
+    
+    init(userDefaults: UserDefaultsServiceProtocol = UserDefaultsService.shared) {
+        self.userDefaults = userDefaults
+    }
+}
 
+// MARK: - SelectCountryInteractorProtocol conform Methods
+
+extension SelectCountryInteractor: SelectCountryInteractorProtocol {
+    
     func getCountries() -> Countries {
         // В реальном проекте этот массив заполнялся бы или из базы данных, или с сервера
         [
@@ -32,6 +45,6 @@ final class SelectCountryInteractor: SelectCountryInteractorProtocol {
     }
     
     func setSelectedCountry(_ country: Country) {
-        UserDefaultService.shared.selectedCountry = country
+        userDefaults.selectedCountry = country
     }
 }

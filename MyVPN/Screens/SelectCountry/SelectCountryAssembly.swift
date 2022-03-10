@@ -9,7 +9,7 @@
 import UIKit
 
 final class SelectCountryAssembly {
-
+    
     static func build(model: SelectCountryDataModel) -> UIViewController {
         let viewController = SelectCountryViewController()
         let interactor = SelectCountryInteractor()

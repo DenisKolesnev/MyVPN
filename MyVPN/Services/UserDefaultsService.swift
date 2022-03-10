@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol UserDefaultServiceProtocol {
+protocol UserDefaultsServiceProtocol {
     var selectedCountry: Country? { get set }
 }
 
-final class UserDefaultService {
+final class UserDefaultsService {
     
-    // MARK: - Keys
+    // MARK: - UserDefaults Keys
     
     private enum UserDefaultsKeys: String {
         case selectedCountry
@@ -25,13 +25,13 @@ final class UserDefaultService {
     
     // MARK: - Singleton
 
-    static let shared = UserDefaultService()
+    static let shared = UserDefaultsService()
     private init() { }
 }
 
-// MARK: - UserDefaultServiceProtocol confirm Methods
+// MARK: - UserDefaultServiceProtocol conform Methods
 
-extension UserDefaultService: UserDefaultServiceProtocol {
+extension UserDefaultsService: UserDefaultsServiceProtocol {
     
     var selectedCountry: Country? {
         get {

@@ -43,7 +43,7 @@ final class MainViewController: UIViewController {
     }
 }
 
-// MARK: - MainDisplayProtocol confirm Methods
+// MARK: - MainDisplayProtocol conform Methods
 
 extension MainViewController: MainDisplayProtocol {
     
@@ -73,7 +73,7 @@ extension MainViewController: MainDisplayProtocol {
 private extension MainViewController {
     
      func loadSelectedCountry() {
-        if let selectedCountry = UserDefaultService.shared.selectedCountry {
+        if let selectedCountry = UserDefaultsService.shared.selectedCountry {
             self.selectedCountry = selectedCountry
         } else {
             self.selectedCountry = Country(flag: "🇧🇾", name: "Belarus")

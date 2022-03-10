@@ -19,7 +19,7 @@ final class MainPresenter {
     private var timer: Timer?
 }
 
-// MARK: - MainPresenterProtocol confirm Methods
+// MARK: - MainPresenterProtocol conform Methods
 
 extension MainPresenter: MainPresenterProtocol {
     
@@ -43,10 +43,10 @@ extension MainPresenter: MainPresenterProtocol {
 private extension MainPresenter {
     
     func connect() -> Bool {
-        // Иммитируем подключение
+        // Иммитируем подключение на 5 секунд
         if timer == nil {
-            let timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { [weak self] _ in
-                self?.disconnect()
+            let timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { _ in
+                self.disconnect()
             }
             self.timer = timer
         }

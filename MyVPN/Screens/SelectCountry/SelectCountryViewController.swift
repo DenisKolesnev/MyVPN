@@ -32,7 +32,7 @@ final class SelectCountryViewController: UIViewController {
     }
 }
 
-// MARK: - SelectCountryDisplayProtocol confirm Methods
+// MARK: - SelectCountryDisplayProtocol conform Methods
 
 extension SelectCountryViewController: SelectCountryDisplayProtocol {
     

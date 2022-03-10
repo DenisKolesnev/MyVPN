@@ -15,7 +15,7 @@ final class MainRouter {
     weak var presenter: MainPresenterProtocol?
 }
 
-// MARK: - MainRouterProtocol confirm Methods
+// MARK: - MainRouterProtocol conform Methods
 
 extension MainRouter: MainRouterProtocol {
     

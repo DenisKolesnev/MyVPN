@@ -14,10 +14,15 @@ protocol SelectCountryPresenterProtocol: AnyObject {
 }
 
 final class SelectCountryPresenter {
+    
+    // MARK: - Variables
+    
     weak var viewController: SelectCountryDisplayProtocol?
     var interactor: SelectCountryInteractorProtocol?
     var router: SelectCountryRouterProtocol?
 }
+
+// MARK: - SelectCountryPresenterProtocol conform Methods
 
 extension SelectCountryPresenter: SelectCountryPresenterProtocol {
     
