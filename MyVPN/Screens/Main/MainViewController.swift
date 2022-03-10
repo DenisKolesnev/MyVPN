@@ -55,6 +55,7 @@ extension MainViewController: MainDisplayProtocol {
     func displayConnect() {
         // Тут мог бы быть вызов методов, которые еще как-нибудь меняли бы интерфейс при начале соединения
         connectButton.isEnabled = false
+        connectButton.setTitle("Connected", for: .normal)
         startConnectAnimation()
     }
     
@@ -62,6 +63,7 @@ extension MainViewController: MainDisplayProtocol {
         // Тут мог бы быть вызов методов, которые еще как-нибудь меняли бы интерфейс при окончании соединения
         // Допустим, вызов алерта "Соединение разорвано"
         connectButton.isEnabled = true
+        connectButton.setTitle("Tap to Connect", for: .normal)
         stopConnectAnimation()
     }
 }

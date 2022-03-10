@@ -45,10 +45,9 @@ private extension MainPresenter {
     func connect() -> Bool {
         // Иммитируем подключение
         if timer == nil {
-            let timer = Timer(timeInterval: 5, repeats: false) { [weak self] _ in
+            let timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { [weak self] _ in
                 self?.disconnect()
             }
-            RunLoop.current.add(timer, forMode: .common)
             self.timer = timer
         }
         return true
